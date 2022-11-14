@@ -1,0 +1,25 @@
+.informacion-esencial {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: grid;
+  @include tabletL {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .telefono {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  .correo {
+    &:hover{
+        color: $gris;
+    }
+    p {
+      font-size: 3rem;
+      color: $azul;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

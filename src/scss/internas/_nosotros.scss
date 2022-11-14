@@ -1,0 +1,47 @@
+.header-nosotros {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url(/build/img/fonto_header.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 40rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $blanco;
+    font-weight: $bold;
+    font-size: 5rem;
+  }
+}
+
+.nosotros{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    @include tabletL {
+       display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 4rem;
+        justify-items: center;
+        padding: 2rem;
+    }
+    .descripcion-nosotros{
+        text-align: justify;
+        h3{
+            text-align: left;
+            color: $azul;
+            font-weight: bold;
+            margin: 0;
+
+        }
+    }
+    picture{
+        padding: 3rem;
+    }
+    iframe{
+        grid-column: 1/3;
+        width: 100%;
+        border-radius: 5rem;
+    }
+}

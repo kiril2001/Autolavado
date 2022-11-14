@@ -1,0 +1,74 @@
+.navegacion {
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: visibility .3s ease-in-out, opacity .5s linear, height .5s linear; 
+
+  @include tabletL {
+    display: flex;
+    align-items: center; //centrado verticalmente
+    margin-top: 0rem;
+    opacity: 1;
+    visibility: visible;
+  }
+  a {
+    color: $blanco;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include tabletL {
+      margin-right: 4rem;
+      font-size: 1.8rem;
+
+      &:last-of-type {
+        margin-right: 0; //para eliminar el margin del ultimo elemento de la NAVEGACION
+      }
+    }
+    &:hover {
+      color: $azul;
+    }
+  }
+}
+
+/**================================NAVEGACION SERVICIOS SCROOL============================**/
+.navegacion_servicios{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+    display: grid;
+  @include tabletL{
+
+  grid-template-columns: repeat(4 , 1fr);
+  gap:4rem;
+  }
+  a{
+    text-align: center;
+    text-decoration: none;
+    color: $negro;
+    font-size: 2rem;
+    &:hover{
+      color: $azul;
+    }
+  }
+}
+
+
+/**==================================MENU HAMBURGUESA======================================**/
+
+.mobile-menu {
+  @include tabletL {
+      display: none;
+  }
+
+  img {
+      width: 5rem;
+  }
+}
+.mostrar {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}

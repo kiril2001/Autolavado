@@ -1,0 +1,78 @@
+.inicio-inferior {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(/build/img/servicios_especiales_inicio.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  p { 
+    padding-bottom: 5rem;
+    font-size: 1.4rem;
+    color: $blanco;
+    text-align: center;
+  }
+  h2{
+    margin: 0;
+   padding-top:15rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $azul;
+
+  }
+  .formulario {
+    background-color: opacity($color: $azul),0.4;
+    border-radius: 3rem;
+    margin: auto;
+   
+    padding: 5rem;
+    max-width: 60rem;
+    fieldset{
+        color: $grisClaro;
+        font-weight: bolder;
+        border: 2px solid $grisClaro;
+      
+    label{
+
+        color: $blanco;
+        font-weight: bold; 
+         display: block;
+    }
+    }
+    input,
+    textarea{
+        border: none;
+        background-color: transparent;
+        background-color: $grisOscuro;
+        width: 100%;
+        border-radius: 1rem;
+        padding: 1rem 1rem;
+        color: $blanco;
+    }
+    .boton-enviar{
+        margin-top: 2rem;
+        &:hover{
+            cursor: pointer;
+            background-color: $azul;
+
+            
+        }
+    }
+    .forma-contacto {
+        max-width: 30rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $negro;
+      }
+  }
+}
+.alerta-error{
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $rojo;
+  font-size: 2rem;
+  color: $blanco;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+} 
+

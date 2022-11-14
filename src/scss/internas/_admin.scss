@@ -1,0 +1,71 @@
+.formularios-admin {
+  margin: 4rem;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  fieldset {
+    color: $negro;
+    border: 1px solid $negro;
+    width: 100%;
+    max-width: 60rem;
+    align-items: center;
+    label {
+      display: block;
+    }
+    input {
+      width: 100%;
+    }
+  }
+}
+
+/** INDICE FOTOS **/
+table.propiedades {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 100%;
+  border-spacing: 0;
+  text-align: center;
+
+  thead {
+    background-color: $grisClaro;
+    border: 1px solid $negro;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 3rem;
+  }
+  tbody {
+    .imagen-tabla {
+      width: 15rem;
+    }
+    .botones {
+      padding: 4rem;
+      @include tablet {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    .contenido-tabla {
+      border: 1px solid $negro;
+      margin: 3rem;
+    }
+  }
+  form {
+    input {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.imagen_small {
+  margin: 2rem 0;
+  width: 20rem;
+}

@@ -1,0 +1,62 @@
+.apartados {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  div,
+  a {
+    margin-bottom: 2rem;
+  }
+  @include tabletL {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+  }
+  a {
+    border: 3px solid transparent;
+    text-decoration: none;
+    &:hover {
+      p{
+        color: $azul;
+      }
+      border: 3px solid $azul;
+      color: $azul;
+      background-color: $grisOscuro;
+    }
+  }
+  .apartado-nav {
+    height: 30rem;
+    @include tabletL {
+      height: 100%;
+    }
+    .mapa {
+      width: 100%;
+      height: 100%;
+      border-radius: 5rem;
+    }
+  }
+  .apartado-contacto,
+  .apartado-horario {
+    margin-bottom: 2rem;
+    @include tabletL{
+      margin: 0;
+    }
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: $blanco;
+    border-radius: 5rem;
+    opacity: 0.6;
+    h2 {
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+  }
+
+  .titulo {
+    color: $blanco;
+    font-weight: bold;
+    font-weight: normal;
+  }
+}

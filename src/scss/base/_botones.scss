@@ -1,0 +1,21 @@
+.boton-inicio {
+  @include boton($blanco, $grisOscuro, $grisOscuro, inline-block);
+}
+
+.boton-verde {
+  @include boton($negro, transparent, $negro, block);
+}
+
+.boton-enviar {
+  @include boton($blanco, transparent, $blanco, inline-block);
+}
+.boton-admin-crear {
+  @include boton($negro, $verde, $negro, block);
+}
+.boton-admin-actualizar {
+  @include boton($blanco, $verde, $verde, inline-block);
+}
+.boton-admin-borrar {
+  @include boton($blanco, $rojo, $rojo, inline-block);
+}
+

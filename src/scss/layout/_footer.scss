@@ -1,0 +1,37 @@
+.footer{
+    padding:3rem 0;
+    background-color: $grisOscuro;
+    text-align: center;
+    margin:0;
+    @include tabletL{
+        @include grid(4, 2rem);
+        justify-content: space-between;
+        
+    }
+    p,h2{
+        color: $blanco;
+        margin: 0;
+        &:last-of-type{
+            margin: 0;
+        }
+    }
+    p,a{
+        font-size: 1rem;
+        text-align: center;
+    }
+    h2{
+        margin: 2rem 0;
+    }
+    nav{
+        display: block;
+        margin: 0;
+        a{
+            margin: 0;
+        }
+    }
+    .derechos{
+        grid-column: 1/5;
+        margin-bottom: 1rem;
+
+    }
+  }
